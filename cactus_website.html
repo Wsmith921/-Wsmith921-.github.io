@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box; /*Sizes everything to scale*/
+}
+
+body {
+  background-color: #f1f1f1;
+  margin: 20px;
+}
+
+/* Header Bar */
+div.header_bar {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  padding: 30px;
+} 
+
+
+/*Navigation Bar*/
+ul.nav_bar {
+  list-style-type: none;
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.nav_bar li a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 20px 14px;
+  font: 16px Arial, sans-serif;
+  text-decoration: none;
+}
+
+ul.nav_bar li a:hover {
+  background-color: grey;
+}
+/* Post Block*/
+div.post {
+  display: block;
+  position: static;
+  padding: 24px 16px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+div.post img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/*Left column*/
+
+div.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+div.rightcolumn {
+  float: right;
+  margin-left: -20px;
+  width: 24%;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  div.leftcolumn, div.rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  div.leftcolumn div.post {
+    margin-right: 0;
+  }
+  
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  ul.nav_bar li a {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header_bar">
+  <h1>Carl the Cactus</h1>
+  <p>Livin the dream, as a sentient cactus.</p>
+</div>
+
+<ul class="nav_bar">
+  <li><a href="home.asp">Home</a></li>
+  <li><a href="about.asp">About</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><span>Contact</span></li>
+</ul>
+
+<div class="leftcolumn">
+  <div class="post">
+    <h3>Happy New Year!</h3>
+    <p>Entering into the year of the cactus, Jan 1, 2021</p>
+    <!-- Use this url and replace id with image id from it's shared url:
+    https://drive.google.com/thumbnail?id= -->
+    <img style="width: 50%; max-width: 400px;" src="https://drive.google.com/thumbnail?id=14cOp4-KMPVC8MEjUVNr3tTYS8XIZ7hTj" alt="Cactus with green hat.">
+    
+    <p>Last year was certainly difficult for everyone. To us cacti, we were able
+    to make it through pretty unscathed. Part of it may be that we aren't susceptible
+    to the diseases that plague the organisms without cloroplasts in their cells.
+    We don't ask for much either. Just some intense sunlight, an occasional watering
+    and an occassional feeding. We also prefer the heat, but some of us can tolerate
+    the cold. A couple of my friend's actually live outside the house I reside in!
+    I'll have to introduce them sometime :).</p>
+    <p>Anyways, this new year I am dedicating as the year of the cactus. Why might you
+    ask? Well, part of it is that this is the first year I will live with a fully developed
+    consciousness! Hooray for self-awareness! But also, the past year was severely painful,
+    like when people prick themselves with our spines. We don't like hurting anyone,
+    and would much rather have our spines left undamaged. I believe that this year,
+    people will stop falling into the cactus patch, making us all happy. So I am
+    optimistic! Once again, Happy New Year, and have a cuddly cactus day!
+    </p>
+     
+  </div>
+</div>
+
+<div class="rightcolumn">
+  <div class="post">
+    <h3>About Me</h3>
+    <img src="https://drive.google.com/file/d/14cOp4-KMPVC8MEjUVNr3tTYS8XIZ7hTj/view" alt="Cinque Terre">
+    <p>I am an awesome cactus</p>
+  </div>
+  <div class="post">
+    <h2>Popular Post</h2>
+    <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="Cinque Terre">
+    <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="Cinque Terre">
+    <img src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="Cinque Terre">
+  </div>
+  <div class="post">
+    <h2>Follow Me</h2>
+    <p>I am on instagram and Facebook:</p>
+  </div>
+</div>
+
+
+</body>
+</html>
